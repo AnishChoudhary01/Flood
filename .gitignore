@@ -1,0 +1,5 @@
+data/
+outputs/combined_flood_dataset.csv
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
