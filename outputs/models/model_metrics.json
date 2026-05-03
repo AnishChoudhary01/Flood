@@ -1,0 +1,120 @@
+{
+  "split": {
+    "train_rows": 60000,
+    "test_rows": 40000,
+    "train_years": [
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "test_years": [
+      2023
+    ],
+    "features": [
+      "rainfall_mm",
+      "rainfall_roll3_mean",
+      "rainfall_roll3_sum",
+      "rainfall_roll7_mean",
+      "rainfall_roll7_sum",
+      "rainfall_roll14_mean",
+      "rainfall_roll14_sum",
+      "rainfall_lag1",
+      "rainfall_lag3",
+      "rainfall_lag7",
+      "river_daily_mean",
+      "river_daily_max",
+      "river_daily_min",
+      "river_obs_count",
+      "river_daily_mean_lag1",
+      "river_daily_mean_roll3_mean",
+      "river_daily_max_lag1",
+      "river_daily_max_roll3_mean",
+      "river_is_discharge",
+      "month",
+      "day_of_year",
+      "state",
+      "district"
+    ]
+  },
+  "random_forest": {
+    "roc_auc": 0.978150716551052,
+    "classification_report": {
+      "0": {
+        "precision": 0.9924746017810109,
+        "recall": 0.9124769372693727,
+        "f1-score": 0.9507960348452988,
+        "support": 34688.0
+      },
+      "1": {
+        "precision": 0.6255550074000986,
+        "recall": 0.9548192771084337,
+        "f1-score": 0.7558867362146051,
+        "support": 5312.0
+      },
+      "accuracy": 0.9181,
+      "macro avg": {
+        "precision": 0.8090148045905547,
+        "recall": 0.9336481071889032,
+        "f1-score": 0.853341385529952,
+        "support": 40000.0
+      },
+      "weighted avg": {
+        "precision": 0.9437476796472256,
+        "recall": 0.9181,
+        "f1-score": 0.9249120799871428,
+        "support": 40000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        31652,
+        3036
+      ],
+      [
+        240,
+        5072
+      ]
+    ]
+  },
+  "xgboost": {
+    "roc_auc": 0.9663906369611867,
+    "classification_report": {
+      "0": {
+        "precision": 0.998997639602936,
+        "recall": 0.8906826568265682,
+        "f1-score": 0.9417358835632096,
+        "support": 34688.0
+      },
+      "1": {
+        "precision": 0.5820566516036592,
+        "recall": 0.994164156626506,
+        "f1-score": 0.7342370524852276,
+        "support": 5312.0
+      },
+      "accuracy": 0.904425,
+      "macro avg": {
+        "precision": 0.7905271456032976,
+        "recall": 0.9424234067265371,
+        "f1-score": 0.8379864680242186,
+        "support": 40000.0
+      },
+      "weighted avg": {
+        "precision": 0.943627876396632,
+        "recall": 0.904425,
+        "f1-score": 0.9141800387960535,
+        "support": 40000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        30896,
+        3792
+      ],
+      [
+        31,
+        5281
+      ]
+    ]
+  }
+}
