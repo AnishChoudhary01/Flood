@@ -48,5 +48,4 @@ python flood_pipeline.py
 ## Notes
 
 - Flood-event windows are encoded inside `flood_pipeline.py`.
-- Kerala 2018 is included in the event definitions, but this folder currently does not contain a `Kerala_2018.csv` rainfall file, so that event cannot appear in the combined dataset until the file is added.
 - Odisha river data contains manual daily discharge rather than hourly river water level, so the pipeline keeps it as a river feature and flags it with `river_is_discharge`.
