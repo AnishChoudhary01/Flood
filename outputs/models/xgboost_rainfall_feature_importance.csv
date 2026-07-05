@@ -1,0 +1,11 @@
+feature,importance,importance_percent
+num__rainfall_roll14_sum,0.032404903,3.2404904
+num__rainfall_roll14_mean,0.030134147,3.0134146
+num__rainfall_roll7_sum,0.024927787,2.4927788
+num__rainfall_roll7_mean,0.022051774,2.2051773
+num__rainfall_roll3_sum,0.01217473,1.217473
+num__rainfall_lag7,0.010507548,1.0507548
+num__rainfall_roll3_mean,0.007021079,0.7021079
+num__rainfall_mm,0.0057089417,0.5708942
+num__rainfall_lag3,0.003929913,0.3929913
+num__rainfall_lag1,0.003374866,0.3374866

@@ -503,9 +503,27 @@ def train_models(df: pd.DataFrame, max_train_rows: int = 60000, max_test_rows: i
         feature_names = pipeline.named_steps["preprocess"].get_feature_names_out()
         importances = getattr(pipeline.named_steps["model"], "feature_importances_", None)
         if importances is not None:
-            pd.DataFrame({"feature": feature_names, "importance": importances}).sort_values(
-                "importance", ascending=False
-            ).head(40).to_csv(model_dir / f"{name}_feature_importance.csv", index=False)
+            importance_df = pd.DataFrame({"feature": feature_names, "importance": importances})
+            total_importance = float(importance_df["importance"].sum())
+            if total_importance > 0:
+                importance_df["importance_percent"] = importance_df["importance"] / total_importance * 100
+            else:
+                importance_df["importance_percent"] = 0.0
+
+            importance_df = importance_df.sort_values("importance", ascending=False)
+            importance_df.head(40).to_csv(model_dir / f"{name}_feature_importance.csv", index=False)
+
+            if name == "xgboost":
+                rainfall_importance = importance_df[
+                    importance_df["feature"].str.contains("rainfall", case=False, na=False)
+                ].copy()
+                rainfall_importance.to_csv(
+                    model_dir / "xgboost_rainfall_feature_importance.csv",
+                    index=False,
+                )
+                metrics[name]["rainfall_importance_percent_total"] = float(
+                    rainfall_importance["importance_percent"].sum()
+                )
 
     (model_dir / "model_metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
 

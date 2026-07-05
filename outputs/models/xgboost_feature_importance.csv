@@ -1,41 +1,41 @@
-feature,importance
-num__month,0.2637585
-num__day_of_year,0.19297339
-cat__state_Assam,0.07843891
-cat__state_Odisha,0.07172
-cat__state_Uttar Pradesh,0.052544426
-num__river_daily_min,0.044129238
-num__rainfall_roll14_mean,0.032026585
-num__rainfall_roll14_sum,0.03125948
-cat__state_Kerala,0.02795569
-num__rainfall_roll7_mean,0.025793042
-num__river_daily_mean,0.020855935
-num__river_daily_mean_roll3_mean,0.017345954
-num__river_is_discharge,0.016571892
-num__river_obs_count,0.0134491315
-num__rainfall_roll3_sum,0.0123742875
-num__rainfall_roll7_sum,0.011755506
-num__rainfall_lag7,0.01009124
-num__river_daily_max_roll3_mean,0.009437174
-cat__district_ETAH,0.007433542
-cat__district_SIDDHARTH NAGAR,0.006972555
-num__rainfall_roll3_mean,0.006873661
-cat__district_BAREILLY,0.0060979105
-num__rainfall_mm,0.0056336913
-cat__district_SIVASAGAR,0.0053828117
-cat__district_GOLAGHAT,0.004804393
-num__rainfall_lag1,0.0037047612
-num__rainfall_lag3,0.0035185192
-cat__district_WEST KARBI ANGLONG,0.0035050316
-cat__district_BONGAIGAON,0.0028396272
-cat__district_MARIGAON,0.002724328
-cat__district_CHIRANG,0.0022896673
-cat__district_KARBI ANGLONG,0.0016235372
-cat__district_IDUKKI,0.0016021084
-cat__district_JORHAT,0.0013793831
-cat__district_THIRUVANANTHAPURAM,0.0009065541
-cat__district_KAMRUP METRO,0.00022754328
-cat__district_NAGAON,0.0
-cat__district_MAU,0.0
-cat__district_MAJULI,0.0
-cat__district_MALAPPURAM,0.0
+feature,importance,importance_percent
+num__month,0.25385755,25.385756
+num__day_of_year,0.18682775,18.682775
+cat__state_Assam,0.076707706,7.6707706
+cat__state_Odisha,0.06651677,6.651677
+cat__state_Uttar Pradesh,0.05343288,5.3432884
+num__river_daily_min,0.04836181,4.836181
+num__rainfall_roll14_sum,0.032404903,3.2404904
+num__rainfall_roll14_mean,0.030134147,3.0134146
+cat__state_Kerala,0.029347545,2.9347544
+num__rainfall_roll7_sum,0.024927787,2.4927788
+num__rainfall_roll7_mean,0.022051774,2.2051773
+num__river_daily_mean,0.020108866,2.0108867
+num__river_daily_mean_roll3_mean,0.017298553,1.7298553
+num__river_is_discharge,0.016061537,1.6061537
+num__river_daily_max,0.013435531,1.3435532
+num__river_obs_count,0.012788384,1.2788384
+num__rainfall_roll3_sum,0.01217473,1.217473
+num__rainfall_lag7,0.010507548,1.0507548
+num__river_daily_max_roll3_mean,0.009146832,0.9146832
+cat__district_ETAH,0.007228297,0.7228297
+num__rainfall_roll3_mean,0.007021079,0.7021079
+cat__district_SIDDHARTH NAGAR,0.0067496775,0.67496777
+cat__district_BAREILLY,0.005978918,0.5978918
+num__rainfall_mm,0.0057089417,0.5708942
+cat__district_GOLAGHAT,0.0047456855,0.47456855
+num__rainfall_lag3,0.003929913,0.3929913
+cat__district_WEST KARBI ANGLONG,0.0038854822,0.38854823
+num__rainfall_lag1,0.003374866,0.3374866
+cat__district_BONGAIGAON,0.002700047,0.27000472
+cat__district_MARIGAON,0.0026538407,0.26538408
+cat__district_CHIRANG,0.0022347316,0.22347316
+cat__district_TINSUKIA,0.0019533194,0.19533195
+cat__district_KARBI ANGLONG,0.0018119069,0.1811907
+cat__district_IDUKKI,0.0015551528,0.15551528
+cat__district_JORHAT,0.0013256309,0.1325631
+cat__district_THIRUVANANTHAPURAM,0.0007576589,0.07576589
+cat__district_KAMRUP METRO,0.00029224082,0.029224081
+cat__district_ALIGARH,0.0,0.0
+cat__district_AMETHI,0.0,0.0
+cat__district_AMROHA,0.0,0.0
